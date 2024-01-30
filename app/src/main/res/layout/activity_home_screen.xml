@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeScreen"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBar"
+        android:layout_height="wrap_content"
+        tools:ignore="DuplicateIds">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            android:background="@color/primaryColor"
+            app:title="الرئيسية"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:navigationIconTint="@color/white"
+            app:titleTextColor="@color/white"
+             />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Add your main content here -->
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@+id/appBar"
+
+      android:paddingBottom="20dp"
+      >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/firstLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20pt"
+            android:padding="10dp"
+
+            android:gravity="right"
+
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/janna"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/primaryColor"
+                android:text="حاسبة السعرات الحرارية" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_below="@+id/firstLin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+
+            android:gravity="right"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/janna"
+                android:textSize="16sp"
+                android:text="العمر:" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/txtAge"
+                    style="@android:style/Widget.Holo.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/secondaryColor"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:fontFamily="@font/janna"
+                    android:hint="ادخل العمر هنا"
+                    android:maxLength="2"
+                    android:layoutDirection="rtl"
+                    android:selectAllOnFocus="false"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_below="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+
+            android:gravity="right"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/janna"
+                android:textSize="16sp"
+                android:text="الوزن (كجم)" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/txtWeight"
+                    style="@android:style/Widget.Holo.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/secondaryColor"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:fontFamily="@font/janna"
+                    android:hint="ادخل الوزن بوحدة كجم"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:layoutDirection="rtl"
+                    android:selectAllOnFocus="false"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_below="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+
+            android:gravity="right"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/janna"
+                android:textSize="16sp"
+                android:text="الطول (سم)" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/txtHeight"
+                    style="@android:style/Widget.Holo.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@color/secondaryColor"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:fontFamily="@font/janna"
+                    android:hint="ادخل الطول بوحدة سم "
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:layoutDirection="rtl"
+                    android:selectAllOnFocus="false"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_below="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+
+            android:gravity="right"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/janna"
+                android:textSize="16sp"
+                android:text="الجنس" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@color/secondaryColor"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/genderSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/gender_options"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l6"
+            android:layout_below="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            android:padding="10dp"
+
+            android:gravity="right"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:fontFamily="@font/janna"
+                android:textSize="16sp"
+                android:text="مستوى النشاط" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@color/secondaryColor"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/activityLevelSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genderSpinner"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="10dp"
+                    android:entries="@array/activity_level_array"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/janna"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/l5"
+            android:layout_marginHorizontal="20dp"
+            android:text="احسب"
+            android:background="@color/primaryColor"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold" />
+    </LinearLayout>
+  </ScrollView>
+
+
+
+</RelativeLayout>

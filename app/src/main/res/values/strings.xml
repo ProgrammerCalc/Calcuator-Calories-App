@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">calculator_calories</string>
+    <string-array name="gender_options">
+        <item>ذكر</item>
+        <item>أنثى</item>
+    </string-array>
+
+    <string-array name="activity_level_array">
+        <item>خامل او كثير الجلوس</item>
+        <item>نشاط خفيف 1-3 مرات في الأسبوع</item>
+        <item>نشاط متوسط الشدة 3-5 مرات في الأسبوع</item>
+        <item>نشاط عالي جداً 6-7 مرات في الأسبوع</item>
+    </string-array>
+</resources>
+
+

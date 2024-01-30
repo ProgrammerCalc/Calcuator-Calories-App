@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    tools:context=".Menu_Screen"
+    android:background="@color/res"
+    android:layoutDirection="rtl"
+    android:orientation="vertical">
+
+
+
+    <ImageView
+        android:id="@+id/logoImg"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/trainer" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/primaryColor"
+        android:fontFamily="@font/janna"
+        android:text="حساب السعرات الحرارية"
+
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/primaryColor"
+        android:fontFamily="@font/janna"
+        android:text="حول التطبيق"
+
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/primaryColor"
+        android:fontFamily="@font/janna"
+        android:text="تواصل معنا"
+
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/primaryColor"
+        android:fontFamily="@font/janna"
+        android:text="خروج"
+
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+
+
+
+</LinearLayout>
